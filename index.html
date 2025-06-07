@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Miriwoong Word Cards</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      padding: 20px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 10px;
+      height: 160px;
+      object-fit: cover;
+    }
+    .miriwoong {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-top: 10px;
+      cursor: pointer;
+      color: #007BFF;
+    }
+    .translation {
+      color: #444;
+      margin: 5px 0;
+    }
+    .example {
+      font-style: italic;
+      color: #007BFF;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Miriwoong Word Cards</h1>
+  <div class="grid">
+
+    <!-- Card 1 -->
+    <div class="card">
+      <img src="images/fire.jpg" alt="Kangaroo">
+      <div class="miriwoong" onclick="document.getElementById('word1').play()">gejawooleng</div>
+      <audio id="word1" src="audio/gejawooleng.mp3"></audio>
+      <div class="translation">fire (masc)</div>
+      <div class="example" onclick="document.getElementById('sent1').play()">Dili bajgoo gejawooleng.</div>
+      <audio id="sent1" src="audio/sentence1.mp3"></audio>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <img src="images/water.jpg" alt="Water">
+      <div class="miriwoong" onclick="document.getElementById('word2').play()">gulgany</div>
+      <audio id="word2" src="audio/gulgany.mp3"></audio>
+      <div class="translation">water (noun)</div>
+      <div class="example" onclick="document.getElementById('sent2').play()">Ngayin gulgany ganeny.</div>
+      <audio id="sent2" src="audio/sentence2.mp3"></audio>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <img src="images/fire.jpg" alt="Fire">
+      <div class="miriwoong" onclick="document.getElementById('word3').play()">barding</div>
+      <audio id="word3" src="audio/gejawooleng.mp3"></audio>
+      <div class="translation">fire/firewood (noun)</div>
+      <div class="example" onclick="document.getElementById('sent3').play()">Gejawooleng nyalangginy.</div>
+      <audio id="sent3" src="audio/sentence3.mp3"></audio>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card">
+      <img src="images/tree.jpg" alt="Tree">
+      <div class="miriwoong" onclick="document.getElementById('word4').play()">gooleng</div>
+      <audio id="word4" src="audio/gooleng.mp3"></audio>
+      <div class="translation">tree/wood/stick (noun)</div>
+      <div class="example" onclick="document.getElementById('sent4').play()">Woorlab gooleng bardag.</div>
+      <audio id="sent4" src="audio/sentence4.mp3"></audio>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="card">
+      <img src="images/flower.jpg" alt="Flower">
+      <div class="miriwoong" onclick="document.getElementById('word5').play()">thawalang</div>
+      <audio id="word5" src="audio/thawalang.mp3"></audio>
+      <div class="translation">flower (noun)</div>
+      <div class="example" onclick="document.getElementById('sent5').play()">Ngayin thawalang balang.</div>
+      <audio id="sent5" src="audio/sentence5.mp3"></audio>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="card">
+      <img src="images/sun.jpg" alt="Sun">
+      <div class="miriwoong" onclick="document.getElementById('word6').play()">ginygany</div>
+      <audio id="word6" src="audio/ginygany.mp3"></audio>
+      <div class="translation">sun (noun)</div>
+      <div class="example" onclick="document.getElementById('sent6').play()">Ginygany joorroom bardag.</div>
+      <audio id="sent6" src="audio/sentence6.mp3"></audio>
+    </div>
+
+  </div>
+</body>
+</html>
